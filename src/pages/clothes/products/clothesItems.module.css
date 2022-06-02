@@ -1,0 +1,90 @@
+.clothesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: space-around;
+  row-gap: 4rem;
+  column-gap: 4rem;
+  margin: 6rem auto 0 auto;
+  width: 80%;
+}
+.clothesCardImage {
+  height: 220px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  background-size: 100% 100%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.clothesCardActions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: rgba(244, 255, 255, 0.7);
+  padding: 0.4rem 0;
+  border-bottom: 2px var(--primary) solid;
+  border-top: 2px var(--primary) solid;
+  font-size: var(--font-xs);
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+.tooltipParent {
+  position: relative;
+  cursor: pointer;
+}
+.tooltipParent:hover > section {
+  top: -100%;
+  visibility: visible;
+  font-size: var(--font-xs);
+  height: min-content;
+  transition: var(--quick-anim) all;
+  border-radius: 20px;
+}
+.clothesHeader {
+  color: var(--primary);
+  background-color: var(--background-primary);
+  font-size: var(--font-lg);
+  margin-top: 0.5rem;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  width: max-content;
+  padding-bottom: 0.2rem;
+  width: min-content;
+  border-bottom: 5px var(--primary) solid;
+}
+.cardInfo {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 90px;
+  padding-bottom: 0.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cardInfoTitle {
+  font-size: var(--font-md);
+  display: none;
+}
+.loadingHeader {
+  text-align: center;
+}
+.noItemsMessage {
+  font-size: var(--font-lg);
+  text-align: center;
+  margin-top: 1.4rem;
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+.cartItemCount {
+  font-size: 1.6rem;
+  position: relative;
+  left: -1rem;
+}

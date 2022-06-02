@@ -1,0 +1,114 @@
+.clothesHeader {
+  color: var(--primary);
+  background-color: var(--background-primary);
+  font-size: var(--font-lg);
+  margin-top: 0.5rem;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  width: max-content;
+  padding-bottom: 0.2rem;
+  width: min-content;
+  border-bottom: 5px var(--primary) solid;
+}
+.categoriesBar {
+  width: 75%;
+  margin: 1rem auto 0 auto;
+  display: flex;
+  border: none;
+  padding-bottom: 2px var(--primary) solid;
+  color: var(--primary);
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 1rem;
+}
+.radioContainer {
+  display: flex;
+  gap: 0.8rem;
+  align-items: stretch;
+}
+
+.radioContainer > label,
+.radioContainer > input {
+  cursor: pointer;
+  font-size: var(--font-md);
+}
+.hiddenRadio {
+  display: none;
+}
+.labelBtn {
+  border: 3px var(--primary) solid;
+  background-color: black;
+  color: white;
+  padding: var(--btn-md);
+  transition: all var(--quick-anim);
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0px var(--primary);
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-md) !important;
+}
+.activeLabel {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  position: relative;
+  letter-spacing: 0.2rem;
+}
+
+.priceFilterContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+.priceFilterInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.priceFilterInputs > input {
+  border: none;
+  border-bottom: 3px var(--primary) solid;
+  font-size: var(--font-md);
+  width: 80%;
+}
+.h2ClothesHeader {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+@media all and (min-width: 576px) {
+  .clothesHeader {
+    white-space: nowrap;
+  }
+}
+@media all and (min-width: 992px) {
+  .labelBtn {
+    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categoriesBar {
+    flex-direction: row;
+  }
+  .priceFilterInputs {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@keyframes showActiveCategory {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}

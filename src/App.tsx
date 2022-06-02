@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useState } from "react";
+import Navbar from "./components/navbar/Navbar";
+import { HashRouter as Router } from "react-router-dom";
+import "./globalCss/resets.css";
+import "./globalCss/variables.css";
+import ToogleTheme from "./components/toogleTheme/ToogleTheme";
+import ShopRoutes from "./Routes/ShopRoutes";
+import BackgroundThemeHelper from "./components/backgroundThemeHelper/BackgroundThemeHelper";
+import { Theme } from "./sharedTypes/theme";
+const App = () => {
+  const [theme, setTheme] = useState<Theme>("light");
+  console.log(theme);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div data-theme={theme}>
+      <Router>
+        <Navbar />
+        <ShopRoutes />
+        <ToogleTheme setTheme={setTheme} theme={theme} />
+        <BackgroundThemeHelper />
+      </Router>
     </div>
   );
-}
+};
 
 export default App;

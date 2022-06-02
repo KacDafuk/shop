@@ -1,0 +1,21 @@
+.loadingContainer {
+  width: min-content;
+  margin: 3rem auto 0 auto;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  background-color: red;
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-size: var(--font-md);
+}
+.loadingTruckAnimation {
+  position: absolute;
+  bottom: 20px;
+}
+.loadingTruck {
+  margin-top: 0.9rem;
+}
+.loadingHeader {
+  font-size: var(--font-md);
+}

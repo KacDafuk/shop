@@ -1,0 +1,123 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 2rem;
+  gap: var(--flex-gap);
+  border-bottom: 2px var(--primary) solid;
+  padding-bottom: 2rem;
+  position: relative;
+  background-color: var(--secondary);
+}
+.navHidden {
+  display: none !important;
+}
+.navAnimate {
+  position: relative;
+  animation: showNav 1s;
+}
+/*** links styles ***/
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--flex-gap);
+}
+.linksContainer {
+  position: relative;
+}
+.linkIcon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  visibility: hidden;
+}
+.navLink {
+  transition: 1s all;
+  position: relative;
+  left: 0px;
+  border-bottom: 1px var(--primary) solid;
+  font-size: var(--font-desktop-md);
+  color: var(--primary);
+  padding: var(--btn-lg);
+  display: inline-block;
+}
+.navLink:hover {
+  box-shadow: -10px 6px 0px -2px var(--primary);
+  left: 10px;
+
+  border-right: 0.02px rgba(black, 0.2) solid;
+}
+.navLink:hover > .linkIcon {
+  display: inline-block;
+  left: -30px;
+  top: 15px;
+  visibility: visible;
+  transition: 0.4s all;
+  color: var(--primary);
+  z-index: 3;
+}
+.shoppingCartIcon {
+  margin-left: 0.2rem;
+}
+/*** Hamburger styles ***/
+.hamburgerMenu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  z-index: 100;
+  cursor: pointer;
+  overflow: hidden;
+  padding: var(--btn-sm);
+}
+.hamburgerMenuBar,
+.hamburgerMenuBarNavVisible {
+  width: 30px;
+  height: 5px;
+  background-color: var(--primary);
+
+  /* allows animation for middle bard */
+  transition: var(--quick-anim) all;
+  position: relative;
+  right: 0px;
+}
+.hamburgerMenuBarNavVisible:nth-child(1),
+.hamburgerMenuBarNavVisible:nth-child(3) {
+  transform: rotate(90deg);
+}
+.hamburgerMenuBarNavVisible:nth-child(2) {
+  position: relative;
+  right: -100px;
+}
+
+@media all and (min-width: 768px) {
+  .nav,
+  .linksContainer {
+    flex-direction: row;
+  }
+  .navHidden {
+    display: flex !important;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+}
+
+@keyframes showNav {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 0%;
+  }
+}

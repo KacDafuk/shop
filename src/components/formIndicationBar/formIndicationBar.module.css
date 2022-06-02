@@ -1,0 +1,38 @@
+.barContainer {
+  display: flex;
+  margin: 1rem auto 0 auto;
+  width: min-content;
+  justify-content: space-between;
+  gap: 5.5rem;
+  font-size: var(--font-md);
+  font-weight: bold;
+  color: var(--primary);
+  background-color: var(--secondary);
+  text-align: center;
+  position: relative;
+  left: -25px;
+}
+.activeBar {
+  background-color: green;
+}
+.barHeader {
+  white-space: nowrap;
+}
+.circleIndicator,
+.circleIndicatorActive {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%);
+  border: 1px var(--primary) solid;
+}
+.circleIndicator {
+  animation: changeIndicatorColor var(--quick-anim);
+  animation-direction: reverse;
+}
+.circleIndicatorActive {
+  background-color: black;
+}

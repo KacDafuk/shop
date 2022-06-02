@@ -1,0 +1,26 @@
+.errorMessage {
+  position: fixed;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
+  border: 1px var(--primary) solid;
+  color: red;
+  background-color: var(--secondary);
+  font-size: var(--font-md);
+  width: min(80%, 400px);
+  height: 100px;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  text-align: center;
+  justify-content: flex-start;
+}
+.closeErrorBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  border-bottom: 3px var(--primary) solid;
+  padding: 0 1.5rem 0.4rem 0.5rem;
+  cursor: pointer;
+}

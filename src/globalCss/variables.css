@@ -1,0 +1,43 @@
+:root {
+  --primary: black;
+  --secondary: white;
+  --lead: gray;
+
+  /*** BREAKING POINTS ***/
+  --screen-sm: 576px;
+  --screen-md: 768px;
+  --screen-lg: 992px;
+  --screen-xl: 1200px;
+  --screen-xxl: 1400px;
+
+  /*** font sizes ***/
+  --font-sm: 0.7rem;
+  --font-md: 1.5rem;
+  --font-lg: 3.5rem;
+
+  /*** button sizes ***/
+  --btn-sm: 0.5rem;
+  --btn-md: 0.75rem;
+  --btn-lg: 1rem;
+  /*** flex ***/
+  --flex-gap: 2.5rem;
+
+  /*** animation time ***/
+  --quick-anim: 0.4s;
+  --normal-anim: 1s;
+  --slow-anim: 3s;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --font-xs: 0.6rem;
+    --font-sm: 0.8rem;
+    --font-md: 1.3rem;
+    --font-lg: 3rem;
+  }
+}
+
+[data-theme="dark"] {
+  --primary: white;
+  --secondary: black;
+  --lead: white;
+}

@@ -1,0 +1,112 @@
+.userCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 100%;
+  flex-grow: 0;
+  gap: 2rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  justify-content: center;
+}
+.cardItemHeader {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.orderButton {
+  padding: var(--btn-lg);
+  margin-top: 3rem;
+  font-size: var(--font-lg);
+  width: 80%;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border-bottom: 3px var(--primary) solid;
+  margin: 1.8rem auto 0 auto;
+  transition: all var(--quick-anim);
+  text-align: center;
+}
+.orderButton:hover {
+  border-radius: 40px;
+  letter-spacing: 5px;
+}
+.productPrice {
+  font-weight: bold;
+  text-align: center;
+  font-size: var(--font-md);
+  margin-bottom: 0.5rem;
+  margin-top: 1.2rem;
+  border-bottom: 2px var(--primary) solid;
+}
+.amountContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.cardImage {
+  background-size: 80% 80%;
+  background-position: bottom;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 1.5rem;
+  width: 50%;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px var(--primary) solid;
+  padding-bottom: 0.3rem;
+}
+.tooltipParent {
+  position: relative;
+  cursor: pointer;
+}
+.tooltipParent:hover > section {
+  top: -100%;
+  visibility: visible;
+  font-size: var(--font-xs);
+  height: min-content;
+  transition: var(--quick-anim) all;
+  border-radius: 20px;
+}
+.actionIcon {
+  cursor: pointer;
+  background-color: var(--secondary) !important;
+  transition: var(--quick-anim) all;
+}
+.actionIcon:hover {
+  transform: scale(1.2);
+}
+.totalCost {
+  margin: 2rem auto 0 auto;
+  font-size: var(--font-lg);
+  text-align: center;
+}
+
+@media all and (min-width: 992px) {
+  .userCardContainer {
+    width: 60%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

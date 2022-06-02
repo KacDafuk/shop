@@ -1,0 +1,34 @@
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+
+  width: 65%;
+  color: var(--primary);
+  background-color: var(--secondary);
+  text-align: center;
+}
+.dataHeader {
+  font-size: var(--font-md);
+}
+.dataSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+}
+.dataDescription {
+  border-bottom: 3px var(--primary) solid;
+}
+.userDataHeader {
+  font-size: var(--font-lg);
+  margin-top: 1.7rem;
+  text-align: center;
+}
+@media all and (min-width: 992px) {
+  .dataContainer {
+    margin-right: 3rem;
+    width: 40%;
+  }
+}

@@ -1,0 +1,30 @@
+.toogleThemeContainer {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  padding: 0.4rem 0.5rem;
+  border-radius: 2rem;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: 3px var(--primary) solid;
+  position: fixed;
+  bottom: 3%;
+  left: 1rem;
+}
+.wheelIndicator {
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary);
+  border: 3px var(--secondary) solid;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s;
+}
+.wheelIndicatorLightMode {
+  transform: translateY(-50%) translateX(-15%);
+}
+.wheelIndicatorDarkMode {
+  transform: translateY(-50%) translateX(77%);
+}

@@ -1,0 +1,11 @@
+.UserPageContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+@media all and (min-width: 992px) {
+  .UserPageContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

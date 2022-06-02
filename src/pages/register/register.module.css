@@ -1,0 +1,70 @@
+.userFormDisplay {
+  width: min(350px, 90%);
+  border: 1px var(--primary) solid;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 430px;
+  padding: 1rem 2rem 2rem 2rem;
+  font-size: var(--font-md);
+  font-weight: bold;
+
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px var(--primary);
+}
+.userFormDisplay > input {
+  font-size: var(--font-md);
+  padding: 0.2rem;
+  transition: all var(--quick-anim);
+  border: none;
+  border-bottom: 1px black solid;
+  background-color: rgb(243, 243, 243);
+}
+
+.userFormDisplay > label {
+  margin-top: 0.5rem;
+}
+.userFormHide {
+  display: none;
+}
+.formHeader {
+  text-align: center;
+}
+.formButton {
+  text-align: center;
+  padding: var(--btn-md);
+  letter-spacing: 0.2rem;
+  margin-top: 0.3rem;
+  font-weight: bold;
+  font-size: var(--font-md);
+  width: 100%;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border-bottom: 2px var(--primary) solid;
+  margin: 0 auto;
+  align-self: center;
+  transition: all var(--quick-anim);
+}
+.formButton:hover {
+  border-radius: 15px;
+  letter-spacing: 0.3rem;
+}
+.notAllFormsFilledMessage {
+  text-align: center;
+  color: red;
+  margin-top: 1rem;
+  font-size: var(--font-md);
+  position: relative;
+  border-bottom: 3px var(--primary);
+  line-height: 2.4rem;
+  text-transform: uppercase;
+}
+.errorMessage {
+  text-align: center;
+  margin-top: 1rem;
+  color: red;
+  font-size: var(--font-md);
+}

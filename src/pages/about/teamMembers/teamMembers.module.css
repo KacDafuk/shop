@@ -1,0 +1,97 @@
+/*** team members styles ***/
+.teamMembers {
+  display: grid;
+  width: 95%;
+  height: 2400px;
+  margin: 4rem auto 0 auto;
+  color: var(--primary);
+}
+.teamMemberInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  text-align: center;
+  row-gap: 1rem;
+}
+.teamMemberCard {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border: 5px var(--primary) solid;
+  background-color: var(--secondary);
+  color: var(--primary);
+  transition: 0.4s all;
+  border-radius: 5px;
+  padding: 1rem;
+  background-size: 105% 105%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.teamMemberCard:hover {
+  background-size: 120% 120%;
+}
+.teamMemberName {
+  font-size: var(--font-lg);
+  padding-bottom: 0.8rem;
+}
+.teamMemberLinks {
+  display: flex;
+  justify-content: space-around;
+}
+.teamMemberLinks > i:nth-child(n) {
+  color: rgb(96, 227, 234); /*** icon colors ***/
+  transition: all var(--quick-anim);
+  cursor: pointer;
+}
+.teamMemberLinks > i:hover {
+  transform: scale(1.3);
+}
+
+.teamMemberCardDescription {
+  margin-top: 1rem;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  line-height: 2rem;
+}
+
+@media all and (min-width: 576px) {
+  .teamMembers {
+    width: 60%;
+  }
+  .articleHeader {
+    white-space: nowrap;
+  }
+}
+@media all and (min-width: 768px) {
+  .teamMembers {
+    width: 85%;
+    height: 1200px;
+    gap: 5rem;
+  }
+  .teamMemberInfo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (min-width: 992px) {
+  .teamMemberInfo {
+    text-align: left;
+  }
+  .articleHeader {
+    white-space: nowrap;
+  }
+  .teamMembers {
+    width: 75%;
+  }
+}
+
+.articleHeader {
+  border-bottom: 0.2rem var(--primary) solid;
+  font-size: var(--font-lg);
+  color: var(--primary);
+  margin-top: 2rem;
+  width: min-content;
+  margin: 6rem auto 0 auto;
+}
