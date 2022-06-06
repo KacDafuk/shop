@@ -4,7 +4,7 @@
   margin: 3rem auto 0 auto;
   display: flex;
   flex-direction: column;
-  height: 430px;
+  height: 460px;
   padding: 1rem 2rem 2rem 2rem;
   font-size: var(--font-md);
   font-weight: bold;
@@ -12,6 +12,7 @@
   color: black;
   background-color: white;
   box-shadow: 0px 0px 2px 0px var(--primary);
+  border: 3px blue solid;
 }
 .loginForm > input {
   font-size: var(--font-md);

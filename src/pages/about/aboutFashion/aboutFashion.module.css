@@ -25,6 +25,7 @@
   gap: 3rem;
   align-items: center;
   background-attachment: fixed;
+  font-size: var(--font-md);
 }
 .articleHeader {
   border-bottom: 0.2rem var(--primary) solid;

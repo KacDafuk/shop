@@ -26,9 +26,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/clothes" className={styles.navLink}>
+            <Link to="/products" className={styles.navLink}>
               <i className={`fa-solid fa-shirt ${styles.linkIcon}`}></i>
-              Clothes
+              Products
             </Link>
           </li>
         </ul>
