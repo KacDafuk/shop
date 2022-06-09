@@ -29,4 +29,5 @@
 ## Live site
 * LIVE : https://shop-af18a.web.app/#/products
 * login: test@test.com
-* password: testtest.com
+* password: testtest
+
