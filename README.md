@@ -10,7 +10,7 @@
   ### About
    General information about shop and main team behind it.
   ### Customer Service
-   Section mostly asked to customer service of the shop and additional information for contact if needed.
+   Section of questions mostly asked to customer service of the shop and additional information for contact if needed.
   ### Products
    Page with items fetched from https://fakestoreapi.com/ with infinite scroll, add to cart logic and link to read more about product in a form of book icon.
    #### Product
